@@ -1,0 +1,527 @@
+
+.wrap{
+    min-width: 1200px;
+    overflow-x: hidden;
+}
+
+.inner{
+    width: 1100px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+.inner:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* header */
+.gnb{
+    position: absolute;
+    background: white;
+    width: 100%;
+    height: 100px;
+    top:50px;
+    margin: 0 auto;
+}
+
+.gnb_top ul li a{
+    position: absolute;
+    color: white;
+    /* border: 1px solid red; */
+    top:12px;}
+
+.gnb ul{
+    text-align: right;
+    margin-top: 40px;
+    padding: 0 50px 0 0;
+}
+
+.gnb ul li{
+    margin-left: 40px;
+}
+
+.gnb ul li:nth-child(4)::after{
+    content: "ㅣ";
+    margin-left: 40px;
+    color: #bbb;
+}
+
+.header .gnb .logo{
+    background: url("../img/samsung-logo.PNG") no-repeat center;
+    width: 60px;
+    height: 60px;
+    background-size: 110%;
+    /* border: 1px solid red; */
+    margin: 0 0 0 50px;
+    padding: 0;
+    position: absolute;
+    top: 20px;
+}
+
+.header .gnb .logo, .gnb ul li{
+    display: inline-block;
+}
+
+.gnb2 ul{
+    position: absolute;
+    top:650px;
+    background: white;
+    width: 1000px;
+    height: 150px;
+    /* border: 1px solid red; */
+    left:50%; transform:translateX(-50%);
+    box-sizing: border-box;
+    z-index: 100 !important;
+    text-align: center;    
+}
+
+.gnb2 ul::after{
+    content: '';
+    display: block;
+    background: orange;
+    width: 1000px;
+    height: 10px;
+    position: absolute;
+    top: 0;
+}
+
+.gnb2 ul li{
+    width: 195px;
+    display: inline-block;
+    /* padding: 64.3px 0; */
+    /* padding: 64.3px 30px; */
+    background: cornflowerblue;
+}
+
+.gnb2 ul li a{
+    display: inline-block;
+    width: 195px;
+    padding: 100px 0 32px 0;
+    /* border: 1px solid white; */
+    /* background: cornflowerblue; */
+}
+
+.gnb2 ul .gnb2_1 strong{
+    background-image: url("../img/main_link01.png") center no-repeat;
+    width: 62px;
+    height: 35px;
+    display: inline-block;
+    background-position: center 34px;
+}
+
+
+
+
+.container .slider .unit_01 a img, .unit_02 a img{
+    width:100vw;
+    display: block; 
+}
+
+.container .slider .unit_01 .inner .cont{
+    position: absolute;
+    top:-450px;
+    right: 60px;
+    color: white;
+    font-size: 30px;
+    font-family: 'NanumSquare', sans-serif !important;
+    line-height: 40px;
+    z-index: 2;
+}
+
+.container .slider .unit_01 .inner .cont::before{
+    content: "ㅣ";
+    color: orange;
+    font-weight: 700;}
+
+
+.model{
+    margin-top: 160px;
+    margin-bottom: 160px;
+    text-align: center;
+}
+
+.model .item{
+    display: inline-block;
+}
+
+
+.main_motor{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.main_motor a img{
+    width: auto;
+    display: block;
+    position: absolute;
+    top:-170px;
+}
+
+.brand_news{
+    margin-top: 100px;
+    text-align: center;}
+
+.brand_news .brand_btn{
+}    
+
+.brand_news .brand_btn a{   
+    border:1px solid #666;
+    display: inline-block;
+    padding: 5px 20px;
+}
+
+.brand_news .brand_btn a:hover{
+    background-color: orange;
+    color: white;
+}
+
+.youtube ul{
+    margin-top: 100px;
+    background: #eee;
+    height: 500px;
+    width: 1165px;
+    position: relative;
+    transform: translateX(100px);
+    margin-bottom: 50px;
+}
+
+.youtube ul li{
+    position: absolute;
+    top:-10px;
+    text-align: left;
+}
+
+.youtube ul li:nth-child(1){
+    right: 483px;
+}
+
+.youtube ul li:nth-child(2){
+    right: 0;
+}
+
+.youtube ul:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.youtube ul li iframe{}
+
+
+.youtube ul .youtube_p{
+    position: absolute;
+    top:400px;
+    right: 100px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.youtube ul .youtube_p a{
+    color: #888;
+}
+
+.youtube ul .youtube_p::before{
+    content: '⇁';
+    display: block;
+    color:orange;
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid red; */
+    position: absolute;
+    left: -50px;
+    top: -15px;
+}
+
+.youtube ul .youtube_p a:hover{
+    color: orange;
+}
+
+/* 브랜드 뉴스 */
+
+
+.section.banner{}
+
+
+.section .banner .ul li{
+    display: inline-block;
+}
+    
+.section.banner .inner .notice{
+    width: 470px;
+    /* border: 1px solid blue; */
+}
+
+.section.banner .inner .notice a{
+    display: inline-block;
+    /* border: 1px solid red; */
+    width: 470px;
+    height: 600px;
+    overflow: hidden;
+}
+
+
+.section.banner .inner .notice a::before{
+    content: '.';
+    display: block;
+    width: 470px;
+    height: 600px;
+    position: absolute;
+    z-index: 700;
+    background: linear-gradient( to top,rgba(0, 0, 0, 6), rgba(0, 0, 0, 0.5),  rgba(0, 0, 0, 0.1) );
+}
+
+
+.section.banner .inner .notice a img{
+    width: 190%;
+    transform: translateX(-210px);
+}
+
+
+.section.banner .inner .notice p{
+    margin: 0;
+    left: 40px;
+    top: 510px;
+    position: absolute;
+    color: white;
+    line-height: 25px;
+    font-weight: bold;
+    z-index: 701;
+}
+
+.section.banner .inner .notice h3{
+    font-size: 30px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.section.banner .inner .notice h3::after{
+    position: absolute;
+    top: 0;
+    left: 110px;
+    content: '⇁';
+    display: block;
+    color: orange;
+}
+
+.section.banner .inner .more{
+    /* border: 1px solid blue; */
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 240px;
+}
+
+.section.banner .inner .more a{
+    display: inline-block;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    /* border: 1px solid red; */
+}
+
+.section.banner .inner .more a img{
+    transform: translateX(-200px);
+    width: 155%;
+}
+
+.section.banner .inner .more a::before{
+    content: '';
+    display: block;
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    z-index: 700;
+    background: linear-gradient( to right,rgba(0, 0, 0, 6), rgba(0, 0, 0, 0.5),  rgba(0, 0, 0, 0.1) );
+}
+
+.section.banner .inner .more p{
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    color: white;
+    font-weight: bold;
+    z-index: 703;
+    line-height: 25px;
+}
+
+
+.section.banner .inner .more h3{
+    margin: 0;
+    font-size: 30px;
+    position: relative;
+    right:-520px;
+    margin-bottom: 20px;
+}
+
+.section.banner .inner .more h3::before{
+    position: absolute;
+    left: -35px;
+    content: '⇁';
+    display: block;
+    color: orange;
+}
+
+
+/* section.banner */
+
+hr{
+    margin-top: 100px;
+}
+
+/* hr */
+
+
+.center{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.center ul li{
+    display: inline-block;
+    width: 200px;
+    padding: 0 40px;
+}
+
+.center ul .center_1{
+    width: 200px;
+    border: 1px solid white;
+    border-right: 1px solid #888;
+    border-style: dotted;
+}
+
+.center ul .center_1 img{
+    width: 50%;
+    height: 50%;
+}
+
+
+.center ul .center_2{
+    width: 200px;
+    border: 1px solid white;
+    border-right: 1px solid #888;
+    border-style: dotted;
+}
+
+.center ul .center_2 img{
+    width: 50%;
+    height: 50%;
+}
+
+.center ul .center_3{
+    width: 200px;
+}
+
+.center ul .center_3 img{
+    width: 50%;
+    height: 50%;
+}
+
+.footer {
+    background: #333;
+    height: 460px;
+}
+
+.footer .inner .info_s{
+    padding-top: 160px;
+    line-height: 40px;
+    width: 1000px;
+    /* border: 1px solid wheat; */
+    float: left;
+    font-size: 13px;
+    
+}
+
+.footer .inner .info{
+    width: 200px;
+    /* border: 1px solid wheat; */
+    display: inline-block;
+}
+
+.footer .inner .info2{
+    width: 500px;
+    /* border: 1px solid wheat; */
+    display: inline-block;
+    color:#ddd;
+}
+
+.footer .inner .info a{
+    color:#ddd;
+}
+
+
+
+.footer .inner .info_s p{
+    margin-top: 8px;
+    color: #999;
+}
+
+.final{
+    background: #D9D9D9;
+    height: 130px;
+    text-align: center;
+}
+
+.final p{
+    padding-top: 40px;
+    color:#888;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+@media all and (max-width:1200px){
+    .wrap{
+        min-width: auto;
+    }
+    
+    /* common */
+    .inner{
+        width: auto;
+    }
+
+    .gnb2 ul{
+        top:500px;
+        transition: all .5s;
+    }
+
+}
+
+@media all and (max-width:980px){
+    .gnb2 ul{
+        top:400px;
+        transition: all .5s;
+        width: auto;
+    }
+
+    .gnb2 ul::after{
+        width: auto;
+    }
+    
+    
+    .model .item{
+        /* display:block; */
+        width: 40%;
+    }
+
+
+}
+
+
+@media all and (max-width:720px){
+    .gnb2 ul{
+        top:300px;
+        transition: all .5s;
+    }
+    
+    .model .item{
+        display:block;
+        margin: 0 auto;
+    }
+}

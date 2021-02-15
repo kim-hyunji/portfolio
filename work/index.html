@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>samsung car</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=75f3fab75a0538f7f7f631ed259f9eb6"></script>
+
+    <script>
+
+    var mapContainer = document.getElementById('map'), 
+    mapOption = { 
+        center: new kakao.maps.LatLng(33.450701, 126.570667),
+        level: 3 };
+
+    var map = new kakao.maps.Map(mapContainer, mapOption); 
+    
+    </script>
+
+
+</head>
+
+<body>
+  <div class="wrap">
+      <div class="header">
+            <div class=inner>
+                <div class=gnb_top>
+                    <ul>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </div>
+                <!-- 로그인창 -->
+                <div class=gnb>
+                    <h1><a href="#" class="logo"></a></h1>
+                    <!-- left gnb -->
+                    <ul>
+                        <li>
+                            <a href="#">MODEL</a>
+                        </li>
+
+                        <li>
+                            <a href="#">BUY</a>
+                        </li>
+
+                        <li>
+                            <a href="#">SERVICE</a>
+                        </li>
+
+                        <li>
+                            <a href="#">INSIDE</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><b>회사소개</b></a>
+                        </li>
+
+                        <li>
+                            <a href="#"><b>인재채용</b></a>
+                        </li>
+
+                        <li>
+                            <a href="#"><b>IR</b></a>
+                        </li>
+                </ul>
+                <!-- right gnb, navi -->
+            </div> 
+            <!--navi-->
+      </div>
+     <!-- header -->
+
+
+        <div class="container">
+            <div class="section visual">
+                <ul class="slider">
+                        <li class="unit_01">
+                            <a href="#"><img src="../img/main_visual.png" alt="비주얼 이미지"></a>
+                                <div class="inner">
+                                    <p class="cont">눈길을 사로잡은
+                                    <br>Renault Samsung Motors
+                                    <br><span style="font-size: 100px; line-height: 120px;">SM6</span>
+                                    </p>
+                                </div>
+                        </li>
+
+                        <li class="unit_02" style="display: none;">
+                            <a href="#"><img src="../img/main_visual2.jpg"></a>
+                            <div class="inner">
+                                <p class="cont2">새롭게 태어난<br>
+                                QM 시리즈</p>
+                            </div>
+                        </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="gnb2">
+            <div class="gnb2_orange">
+                <ul>
+                    <li class="gnb2_1"><a href="#"><strong class="sr">내 차 만들기</strong></a></li>
+                    <li class="gnb2_2"><a href="#">맞춤형 금융계산기</a></li>
+                    <li class="gnb2_3"><a href="#">모델 비교</a></li>
+                    <li class="gnb2_4"><a href="#">가격표</a></li>
+                    <li class="gnb2_5"><a href="#">카탈로그</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="model">
+            <h2>FEATURED MODELS</h2>
+
+            <div class="item">
+                <div class="car">
+                    <a href="#"><img src="../img/car1_off.png" alt="프리미엄카" style="opacity: 1;"></a>
+                    <!-- <a href="#"><img src="../img/car1_on.png" alt="프리미엄카" class="off" style="opacity: 0;"></a> -->
+                </div>
+                <strong class="">SM6</strong>
+                <a href="#">자세히보기</a>
+            </div>
+
+            <div class="item">
+                <div class="car">
+                    <a href="#"><img src="../img/car2_off.png" alt="qm6" style="opacity: 1;"></a>
+                    <!-- <a href="#"><img src="../img/car2_on.png" alt="프리미엄카" class="off" style="opacity: 0;"></a> -->
+                </div>
+                <strong class="">QM6</strong>
+                <a href="#">자세히보기</a>
+            </div>
+
+                <div class="item">
+                <div class="car">
+                    <a href="#"><img src="../img/car3_off.png" alt="qm6" style="opacity: 1;"></a>
+                    <!-- <a href="#"><img src="../img/car3_on.png" alt="프리미엄카" class="off" style="opacity: 0;"></a> -->
+                </div>
+                <strong class="">XM3</strong>
+                <a href="#">자세히보기</a>
+            </div>
+
+            <div class="item">
+                <div class="car">
+                    <a href="#"><img src="../img/car4.png" alt="qm6" style="opacity: 1; width: 258px;"></a>
+                    <!-- <a href="#"><img src="../img/car4_on.png" alt="프리미엄카" class="off" style="opacity: 0;"></a> -->
+                </div>
+                <strong class="">캡처</strong>
+                <a href="#">자세히보기</a>
+            </div>
+        </div>
+
+        <div class="main_motor">
+            <a href="#"><img src="../img/event_01.jpg" alt="8월 구매혜택"></a></div>
+
+        <div class="brand_news">
+                <h2>BRAND NEWS</h2>
+                <div class="brand_btn">
+                    <a href="#">YOUTUBE</a><a href="#">INSTAGRAM</a><a href="#">FACEBOOK</a>
+                </div>
+
+            <div class="youtube" style="display: block;">
+                <ul>
+                    <li>
+                        <iframe width="473" height="237" src="https://www.youtube.com/embed/TZDvy6GfV30" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h3><a href="https://youtu.be/TZDvy6GfV30" target="_blank">르노자동차, 잊혀진 섬 NEW QM6, 디자인 스토리 하이라이트</a></h3>
+                        <p>하이라이트로 모아보는 NEW QM6 디자인! 
+                            <br>볼수록 매력적인 디테일로 완성된 뉴QM6를 만나보세요.</p>
+                    </li>
+
+                    <li>
+                        <iframe width="473" height="237" src="https://www.youtube.com/embed/wWi1liSjwlc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h3><a href="https://youtu.be/wWi1liSjwlc">SUV 그 이상, XM3_공간감 편</a></h3>
+                        <p>SUV다운 공간은 기본, XM3만의 디테일까지. 
+                            <br>SUV 그 이상, XM3 Xperience More, XM3</p>
+                    </li>     
+                        <li class="youtube_p">
+                        <a href="#">르노삼성 <span style="color: #222;">유튜브 채널로 가기</span></a>
+                    </li>
+                </ul>
+            </div>
+            
+
+            <div class="instagram" style="display: block;">
+                <ul>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+         </div>
+  
+
+        <div class="section banner">
+            <div class="inner">
+                <ul>
+                    <li class="notice">
+                        <a href="#">
+                            <img src="../img/notice.jpg">
+                        </a>
+
+                        <p>새로운 시작, 설레는 혜택
+                 3      <br>2021.02.01~2021.02.28</p>
+
+                        <h3>NOTICE</h3>
+                    </li>
+
+                    <li class="more">
+                        <h3>MORE</h3>
+                        <a href="#">
+                            <img src="../img/main_visual2.jpg">
+                        </a>
+
+                        <p>NEW QM6출시
+                        <br>2021.02.01~2021.02.28</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+         <hr>
+
+        <div class="center">
+            <h3>CUSTOMER SERVICE</h3>
+            <ul>
+                <li class="center_1">
+                    <img src="../img/center01.png">
+                    <h4>서비스 네트워크</h4>
+                    <p>지역별로 삼성자동차의
+                        <br>서비스 네트워크
+                        <br>정보를 제공합니다.
+                    </p>
+                </li>
+
+                <li class="center_2">
+                    <img src="../img/center02.png">
+                    <h4>서비스 네트워크</h4>
+                    <p>지역별로 삼성자동차의
+                        <br>서비스 네트워크
+                        <br>정보를 제공합니다.
+                    </p>
+                </li>
+                <li class="center_3">
+                    <img src="../img/center03.png">
+                    <h4>서비스 네트워크</h4>
+                    <p>지역별로 삼성자동차의
+                        <br>서비스 네트워크
+                        <br>정보를 제공합니다.
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <div class="inner">
+                <div class="info_s">
+                    <div class="info">
+                        <ul>
+                            <li style="font-weight: bold;"><a href="#">개인정보처리방침</a></li>
+                            <li style="font-weight: bold;"><a href="#">이용약관</a></li>
+                            <li><a href="#" style="color: #999;">회사소개</a></li>
+                            <li><a href="#" style="color: #999;">전문영업인위촉</a></li>
+                            <li><a href="#" style="color: #999;">엔젤센터톡</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="info2">
+                        <ul>
+                            <li>회사명:르노삼성주식회사</li>
+                            <li>대표이메일 : webmaster@renaultsamsungM.com</li>
+                            <li>사업소재지 : 부산광역시 강서구 르노삼성대로 61</li>
+                            <li>사이트 제품 서비스 문의 : 엔젤센터 : 080-300-3000</li>
+                            <li>사업자등록서비스번호</li>
+                        </ul>
+                    </div>
+                    <p>Copyright ⓒ 2021 RENAULT SAMSUNG MOTORS. ALL RIGHTS RESERVED</p>
+                </div>
+
+                <div id="map" style="width:100%;height:350px;"></div>
+            </div>
+        </div>
+
+        <div class="final">
+                <p>ㅣ 차량과 관련된 정보는 실제와 차이가 있을 수 있습니다. 더 자세한 정보는 가까운 전시장을 통해 문의하시기 바랍니다.
+                <br>ㅣ르노삼성자동차 홈페이지는 IE9 버전 이상의 브라우저에 최적화 되어있습니다.</p>
+        </div>
+    </div>
+
+</body>
+</html>
