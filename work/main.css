@@ -476,6 +476,14 @@ hr{
     line-height: 30px;
 }
 
+.footer .inner #map{
+    border: 1px solid red;
+    position: absolute;
+    right: 0;
+    z-index: 1000;
+    top:80px;
+}
+
 @media all and (max-width:1200px){
     .wrap{
         min-width: auto;
