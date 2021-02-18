@@ -9,19 +9,9 @@
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
 
-    <!-- <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=6776001feb6257b6edc0f366482d4bed"></script>
-
-    <script>
-
-    var mapContainer = document.getElementById('map'), 
-    mapOption = { 
-        center: new kakao.maps.LatLng(33.450701, 126.570667),
-        level: 3 };
-
-    var map = new kakao.maps.Map(mapContainer, mapOption); 
-    
-    </script> -->
-  
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="common.js"></script>
 
 </head>
 
@@ -31,46 +21,94 @@
 </script>
   <div class="wrap">
       <div class="header">
-            <div class=inner>
-                <div class=gnb_top>
-                    <ul>
-                        <li><a href="#">로그인</a></li>
-                        <li><a href="#">고객센터</a></li>
+            <div class="inner">
+                <div class="lang">
+                    <!-- <select class="golang" onchange="window.open(value,'_self');">
+                        <option>Korean</option>
+                        <option>English</option>
+                        <option>japanese</option>
+                    </select> -->
+                    <span class="langin"><p>Korean</p></span>
+                    <ul class="langout" style="display: none;">
+                        <li class=""><a href="#">Korean</a></li>
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">japanese</a></li>
                     </ul>
+                </div>
+
+                <div class="gnb_top">
+                        <ul class="gnb_login">
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li><input type="text" autofocus placeholder="검색하기">
+                            <button type="submit"><img src="../img/search-black-18dp.svg"></button></li>
+                        </ul>
                 </div>
                 <!-- 로그인창 -->
                 <div class=gnb>
                     <h1><a href="#" class="logo"></a></h1>
                     <!-- left gnb -->
-                    <ul>
-                        <li>
-                            <a href="#">MODEL</a>
+                    <ul class="menu01_up">
+                        <li>MODEL</li>
+                        <li>BUY</li>
+                        <li>SERVICE</li>
+                        <li>INSIDE</li>
+                    </ul>
+
+                    <ul class="menu01">
+                        <li class="menu_model">
+                            <ul class="down01">
+                                <li>프리미에르</li>
+                                <li>sm6</li>
+                                <li>qm6</li>
+                                <li>xm3</li>
+                                <li>조에 ZOE</li>
+                                <li>캡처 CAPTUR</li>
+                                <li>트위지 TWIZY</li>
+                                <li>마스터 MASTER</li>
+                            </ul>
+                        </li>
+
+                        <li class="menu_buy">
+                            <ul class="down02">
+                                <li>e-쇼룸</li>
+                                <li>전시장 조회</li>
+                                <li>구매절차 안내</li>
+                                <li>맞춤형 금융계산기</li>
+                                <li>이달의 구매혜택</li>
+                                <li>재구매 혜택</li>
+                            </ul>
                         </li>
 
                         <li>
-                            <a href="#">BUY</a>
+                            <ul class="down03">
+                                <li>멤버십 서비스</li>
+                                <li>MY 르노삼성 앱</li>
+                                <li>이지 커넥트</li>
+                            </ul>
                         </li>
 
                         <li>
-                            <a href="#">SERVICE</a>
-                        </li>
-
-                        <li>
-                            <a href="#">INSIDE</a>
-                        </li>
-
-                        <li>
-                            <a href="#"><b>회사소개</b></a>
-                        </li>
-
-                        <li>
-                            <a href="#"><b>인재채용</b></a>
-                        </li>
-
-                        <li>
-                            <a href="#"><b>IR</b></a>
+                            <ul class="down04">
+                                <li>뉴스</li>
+                                <li>이벤트</li>
+                            </ul>
                         </li>
                 </ul>
+            
+                <div class=company>
+                    <li>
+                        <a href="#"><b>회사소개</b></a>
+                    </li>
+
+                    <li>
+                        <a href="#"><b>인재채용</b></a>
+                    </li>
+
+                    <li>
+                        <a href="#"><b>IR</b></a>
+                    </li>
+                </div>
                 <!-- right gnb, navi -->
             </div> 
             <!--navi-->
@@ -79,14 +117,15 @@
 
 
         <div class="container">
+            <span class="shadow" style="display: none;">.</span>
             <div class="section visual">
                 <ul class="slider">
                         <li class="unit_01">
                             <a href="#"><img src="../img/main_visual.png" alt="비주얼 이미지"></a>
                                 <div class="inner">
                                     <p class="cont">눈길을 사로잡은
-                                    <br>Renault Samsung Motors
-                                    <br><span style="font-size: 100px; line-height: 120px;">SM6</span>
+                                        <br>Renault Samsung Motors
+                                        <br><span style="font-size: 100px; line-height: 120px;">SM6</span>
                                     </p>
                                 </div>
                         </li>
@@ -103,15 +142,13 @@
         </div>
 
         <div class="gnb2">
-            <div class="gnb2_orange">
                 <ul>
-                    <li class="gnb2_1"><a href="#"><strong class="sr">내 차 만들기</strong></a></li>
-                    <li class="gnb2_2"><a href="#">맞춤형 금융계산기</a></li>
-                    <li class="gnb2_3"><a href="#">모델 비교</a></li>
-                    <li class="gnb2_4"><a href="#">가격표</a></li>
-                    <li class="gnb2_5"><a href="#">카탈로그</a></li>
+                    <li class="gnb2_1"><a href="#"><strong>내 차 만들기</strong></a></li>
+                    <li class="gnb2_2"><a href="#"><strong>맞춤형 금융계산기</strong></a></li>
+                    <li class="gnb2_3"><a href="#"><strong>모델 비교</strong></a></li>
+                    <li class="gnb2_4"><a href="#"><strong>가격표</strong></a></li>
+                    <li class="gnb2_5"><a href="#"><strong>카탈로그</strong></a></li>
                 </ul>
-            </div>
         </div>
 
         <div class="model">
