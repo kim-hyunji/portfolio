@@ -1,25 +1,14 @@
 $(function(){
         $(".langin").click(function() {
-        $(".langin").hide();
-        $(".langout").show();                
-        });
+        $(this).hide();
+        $(".langout").show();
+    });            
         
         $(".langout").click(function(){
-        $(".langout").hide();
-        $(".langin").show();     
+        $(this).hide();
+        $(".langin").show();
         });
-
-        $(".menu01").mouseleave(function(){ 
-          $(this).stop().slideUp();
-          });
-        
-
-        $(".menu01_up").mouseover(function(){
-            $(".menu01").stop().slideDown();
-        });
-
     });
-
         // $(".menu01_up").mouseover(function(){
         //     $(".menu01").stop().slideDown();
         //     });
