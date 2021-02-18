@@ -216,13 +216,13 @@ input:focus, input:hover, input:checked{
     margin-right: 50px;
 }
 
-.gnb .menu01{
+.gnb #menu01{
     color: white;
     background: rosybrown;
     height: 350px;
 }
 
-.gnb .menu01 span{
+.gnb #menu01 span{
     top: 40px;
     position: absolute;
     color: black;
@@ -231,7 +231,7 @@ input:focus, input:hover, input:checked{
     /* border: 1px solid red; */
 }
 
-.gnb .menu01 > li{
+.gnb #menu01 > li{
     display: inline-block;
     float: left;
     /* border: 1px solid blue; */
@@ -239,17 +239,17 @@ input:focus, input:hover, input:checked{
     margin-left: 22px;
 }
 
-.gnb .menu01 ul li{
+.gnb #menu01 ul li{
     padding: 10px;
     cursor: pointer;
 }
 
-.gnb .menu01 ul li:hover{
+.gnb #menu01 ul li:hover{
     background: orange;
     color: white;
 }
 
-.gnb .menu01 .menu_model{
+.gnb #menu01 .menu_model{
     margin-left: 230px;
 }
 
@@ -443,17 +443,6 @@ input:focus, input:hover, input:checked{
     content: "ㅣ";
     color: orange;
     font-weight: 700;}
-
-.container .shadow{
-    display: block;
-    width: 100vw;
-    height: 100vw;
-    background: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    z-index: 800;
-    /* border: 1px solid red; */
-}
-
 
 .model{
     margin-top: 220px;

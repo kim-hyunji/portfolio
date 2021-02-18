@@ -1,22 +1,25 @@
 $(function(){
         $(".langin").click(function() {
-        $(this).hide();
-        $(".langout").show();
-    });            
+        $(this).stop().hide();
+        $(".langout").stop().show();
+        });            
         
         $(".langout").click(function(){
-        $(this).hide();
-        $(".langin").show();
+        $(this).stop().hide();
+        $(".langin").stop().show();
         });
-    });
-        // $(".menu01_up").mouseover(function(){
-        //     $(".menu01").stop().slideDown();
-        //     });
 
-        // $(".menu01").mouseleave(function(){ 
-        //     $(this).stop().slideUp();
-        //     });
-        // });
+
+        $(".menu01_up").mouseover(function(){
+            $("#menu01").stop().slideDown();
+            });
+
+        $("#menu01").mouseleave(function(){ 
+            $(this).stop().slideUp();
+            });
+        });
+
+
 
         // $('.menu01').slideDown(function(){
         //     $(".container .shadow").css("display","block");
