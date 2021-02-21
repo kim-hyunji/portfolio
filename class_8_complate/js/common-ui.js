@@ -8,4 +8,6 @@ $(function(){
     $(".header .btn-gnb-close").click(function(){
         $(".header .gnb").removeClass("on");
     });
+
+  
 });

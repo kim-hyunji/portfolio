@@ -7,18 +7,23 @@
     <title>samsung car</title>
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
-
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">    
     <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
     <script src="common.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6776001feb6257b6edc0f366482d4bed"></script>
+    <script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(33.450701, 126.570667),
+			level: 3
+		};
 
+		var map = new kakao.maps.Map(container, options);
+	</script>
 </head>
 
 <body>
-
-   
-</script>
   <div class="wrap">
       <div class="header">
             <div class="inner">
@@ -59,9 +64,9 @@
                         <li class="menu_model">
                             <ul class="down01">
                                 <li>프리미에르</li>
-                                <li>sm6</li>
-                                <li>qm6</li>
-                                <li>xm3</li>
+                                <li>SM6</li>
+                                <li>QM6</li>
+                                <li>XM3</li>
                                 <li>조에 ZOE</li>
                                 <li>캡처 CAPTUR</li>
                                 <li>트위지 TWIZY</li>
@@ -129,11 +134,11 @@
                                 </div>
                         </li>
 
-                        <li class="unit_02" style="display: none;">
+                        <li class="unit_02">
                             <a href="#"><img src="../img/main_visual2.jpg"></a>
                             <div class="inner">
-                                <p class="cont2">새롭게 태어난<br>
-                                QM 시리즈</p>
+                                <p class="cont2">새롭게 태어난<br><strong>QM 시리즈</strong>
+                                </p>
                             </div>
                         </li>
                 </ul>
@@ -155,48 +160,52 @@
 
             <div class="item">
                 <div class="car">
-                    <a href="#"><img src="../img/car1_off.png" alt="프리미엄카" style="opacity: 1;"></a>
-                    <!-- <a href="#"><img src="../img/car1_on.png" alt="프리미엄카" class="off" style="opacity: 0;"></a> -->
+                    <a href="#"><img class="car1_off" src="../img/car1_off.png" alt="sm6"></a>
+                    <a href="#"><img class="car1_on" src="../img/car1_on.png" alt="sm6측면이미지" style="display: none;"></a>
                 </div>
-                <strong class="">SM6</strong>
-                <a href="#">자세히보기</a>
+                <strong class="">SM6</strong><br>
+                <a href="#">연비9.4km/ℓ~13.6km/ℓ</a>
             </div>
 
             <div class="item">
                 <div class="car">
-                    <a href="#"><img src="../img/car2_off.png" alt="qm6" style="opacity: 1;"></a>
-                    <!-- <a href="#"><img src="../img/car2_on.png" alt="프리미엄카" class="off" style="opacity: 0;"></a> -->
+                    <a href="#"><img class="car2_off" src="../img/car2_off.png" alt="qm6"></a>
+                    <a href="#"><img class="car2_on" src="../img/car2_on.png" alt="qm6측면이미지" style="display: none;"></a>
                 </div>
-                <strong class="">QM6</strong>
-                <a href="#">자세히보기</a>
+                <strong class="">QM6</strong><br>
+                <a href="#">연비8.6km/ℓ~12km/ℓ</a>
             </div>
 
                 <div class="item">
                 <div class="car">
-                    <a href="#"><img src="../img/car3_off.png" alt="qm6" style="opacity: 1;"></a>
-                    <!-- <a href="#"><img src="../img/car3_on.png" alt="프리미엄카" class="off" style="opacity: 0;"></a> -->
+                    <a href="#"><img class="car3_off" src="../img/car3_off.png" alt="xm3" style="opacity: 1;"></a>
+                    <a href="#"><img class="car3_on" src="../img/car3_on.png" alt="xm3측면이미지" style="display: none;"></a>
                 </div>
-                <strong class="">XM3</strong>
-                <a href="#">자세히보기</a>
+                <strong class="">XM3</strong><br>
+                <a href="#">연비13.2km/ℓ~13.7km/ℓ</a>
             </div>
 
             <div class="item">
                 <div class="car">
-                    <a href="#"><img src="../img/car4.png" alt="qm6" style="opacity: 1; width: 258px;"></a>
-                    <!-- <a href="#"><img src="../img/car4_on.png" alt="프리미엄카" class="off" style="opacity: 0;"></a> -->
+                    <a href="#"><img src="../img/car4.png" alt="xm3" style="opacity: 1; width: 258px;"></a>
+                    <a href="#"><img src="../img/car4_on.png" alt="xm3측면이미지" style="display: none;"></a>
                 </div>
-                <strong class="">캡처</strong>
-                <a href="#">자세히보기</a>
+                <strong class="">캡처</strong><br>
+                <a href="#">연비13km/ℓ~17.7km/ℓ</a>
             </div>
         </div>
 
         <div class="main_motor">
-            <a href="#"><img src="../img/event_01.jpg" alt="8월 구매혜택"></a></div>
+            <a href="#">
+                <img src="../img/event_01.jpg" alt="8월 구매혜택">
+            </a>
+            <p><b>특별한 구매혜택</b>을<br>지금바로 만나보세요</p>
+        </div>
 
         <div class="brand_news">
                 <h2>BRAND NEWS</h2>
                 <div class="brand_btn">
-                    <a href="#">YOUTUBE</a><a href="#">INSTAGRAM</a><a href="#">FACEBOOK</a>
+                    <button id="youtube_btn">YOUTUBE</button><button id="insta_btn">INSTAGRAM</button>
                 </div>
 
             <div class="youtube" style="display: block;">
@@ -219,18 +228,20 @@
                     </li>
                 </ul>
             </div>
-            
 
-            <div class="instagram" style="display: block;">
+
+            <div class="instagram" style="display: none;">
                 <ul>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
+                    <li><a href="https://www.instagram.com/p/CLaoABqr3E4/?utm_source=ig_web_copy_link" target="_blank"><img src="../img/instagram_1.PNG"></a></li>
+                    <li><a href="https://www.instagram.com/p/CLIRxz9Lm6-/?utm_source=ig_web_copy_link" target="_blank"><img src="../img/instagram_2.PNG"></a></li>
+                    <li><a href="https://www.instagram.com/p/CKiWPhSLwG6/?utm_source=ig_web_copy_link" target="_blank"><img src="../img/instagram_3.PNG"></a></li>
                 </ul>
+
+                <div class="insta_p">
+                    <a href="https://www.instagram.com/p/CKiWPhSLwG6/">르노삼성 <span style="color: #222;">인스타 계정 가기</span></a>
+                </div>
             </div>
+
          </div>
   
 
@@ -318,6 +329,8 @@
                     </div>
                     <p>Copyright ⓒ 2021 RENAULT SAMSUNG MOTORS. ALL RIGHTS RESERVED</p>
                 </div>
+
+                <div id="map" style="width:500px;height:400px;"></div>
 
                 <!-- <div id="map" style="width:300px;height:300px;"></div> -->
             </div>
