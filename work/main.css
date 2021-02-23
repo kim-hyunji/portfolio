@@ -32,7 +32,7 @@
 .lang{
     position: absolute;
     top:8px;
-    z-index: 1001;
+    z-index: 3060;
 }
 
 .lang .langin{
@@ -40,7 +40,7 @@
     top:0px;
     display: block;
     color: white;
-    z-index: 1003;
+    z-index: 3050;
     border: 1px solid white;
     width: 168px;
     height: 40px;
@@ -186,15 +186,60 @@ input:focus, input:hover, input:checked{
 } */
 
 
+.header .ham_btn{
+    top:20px;
+    left: 20px;
+    position:absolute;
+    display: none;
+    width: 40px;
+    height: 40px;
+    z-index: 2021;
+    /* border: 1px solid orangered; */
+}
+
+.header .ham_btn .ham{
+    position:absolute;
+    display: none;
+    background: url(../img/table_rows-white-18dp.svg) no-repeat center center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: 3001;
+}
+
 .gnb{
+    display: block;
     position: absolute;
     background: white;
     width: 100%;
     height: 100px;
     top:55px;
-    z-index: 980;
+    z-index: 2020;
     box-shadow: 5px 10px 5px rgb(0, 0, 0, 0.3);
 }
+
+.gnb .close{
+    position: absolute;
+    display: none;
+    width: 40px;
+    height: 40px;
+    /* border: 1px solid red; */
+    top:30px;
+    right:40px;
+}
+
+.gnb .close:hover{
+    border: 1px solid orange;
+}
+
+
+.gnb .close span{
+    display: block;
+    background: url(../img/close-black-18dp.svg) no-repeat center center;
+    width: 40px;
+    height: 40px;
+    background-size: 100%;
+    position: absolute;}
 
 .gnb .menu01_up{
     display: block;
@@ -205,14 +250,14 @@ input:focus, input:hover, input:checked{
     margin-left: 217px;
 }
 
-.gnb .menu01_up li{
+.gnb .menu01_up > li{
     margin-left: 22px;
     margin-right: 70px;
     display: inline-block;
     cursor: pointer;
 }
 
-.gnb .menu01_up li:nth-child(3){
+.gnb .menu01_up > li:nth-child(3){
     margin-left: 47px;
     margin-right: 50px;
 }
@@ -257,7 +302,6 @@ input:focus, input:hover, input:checked{
 .company{
     /* border: 1px solid red; */
     position: absolute;
-    top: 0;
     right: 0;
     float: left;
     top: 40px;
@@ -366,23 +410,11 @@ input:focus, input:hover, input:checked{
     background: url(../img/main_link01.png) no-repeat center center;
     height: 59px;
     width: 104px;
-    background-size: cover;
     display: block;
     margin: 0 auto;
     margin-bottom: 10px;
 } 
 
-
-.gnb2 ul .gnb2_1 strong::before{
-    content:'';
-    background: url(../img/main_link01.png) no-repeat center center;
-    height: 59px;
-    width: 104px;
-    background-size: auto;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 5px;
-} 
 
 .gnb2 ul .gnb2_2 strong::before{
     content:'';
@@ -431,16 +463,16 @@ input:focus, input:hover, input:checked{
     margin-bottom: 10px;
 } 
 
+.container .slider .unit_01 a img, .unit_02 a img{
+    width:100vw;
+    display: block; 
+}
+
 .container .slider .unit_02{
     display: block;
     width: 100vw;
     height: 700px;
     overflow: hidden;
-}
-
-.container .slider .unit_01 a img, .unit_02 a img{
-    width:100vw;
-    display: block; 
 }
 
 .container .slider .unit_02 a img{
@@ -466,9 +498,9 @@ input:focus, input:hover, input:checked{
     font-weight: 200;
 }
 
-.container .slider .unit_02 .inner p b{
+/* .container .slider .unit_02 .inner p b{
     border: 1px solid red;
-}
+} */
 
 .container .slider .unit_01 .inner .cont{
     position: absolute;
@@ -1094,6 +1126,8 @@ hr{
 }
 
 @media all and (max-width:1200px){
+
+
     .wrap{
         min-width: auto;
     }
@@ -1104,30 +1138,280 @@ hr{
     }
 
     .gnb2 ul{
-        top:500px;
-        transition: all .5s;
+        top:400px;
+        transition: all 1s;
     }
 
+    .slider{
+        height: 500px;
+        overflow: hidden;
+    }
+
+    .container .slider .unit_02 img, .unit_01 img{
+        display: block;
+        width: 100vw;
+        height: auto;
+    }
+
+    .bx-wrapper{
+        height: 600px;
+    }
+
+    .container .slider .unit_02 .inner p{
+        margin-top: 150px;
+    }
+
+    .model{
+        margin-top: 400px;
+    }
+
+    .container .slider{
+        height: 400px;
+    }
 }
 
-@media all and (max-width:980px){
+@media all and (max-width:1100px){
+
+    .wrap{
+        overflow: hidden;
+    }
+
+    .header .ham_btn{
+        display: block;
+        }
+
+    .header .ham_btn .ham{
+        display: block;
+        }
+
+    .header .lang, .gnb_top{
+        display: none;
+        }   
 
     .gnb{
-    display: none;
+        /* position: absolute; */
+        display: none;
+        overflow: hidden;
+        top:0;
+        width: 400px;
+        height: auto;
+        z-index: 1900;
+        box-shadow : rgba(0,0,0,0.5) 0 0 0 9999px;
+        }
+
+
+    .gnb .close{
+        display: block;
+        }
+
+        /* .down01_none{
+        display: block !important;
+        border: 1px solid red;
+        } */
+
+    .gnb .ex:hover > ul{
+        display: block !important;
+        }
+
+    
+    .gnb .menu01_up{
+        margin: 210px 0 0 60px;
+        line-height: 30px;
+        /* border: 1px solid red; */
+        height: 400px;
+        box-sizing: border-box;
+        }
+
+    .gnb .menu01_up > li{
+        margin: 0;
+        display: block;
+        /* padding-right: 300px; */
+        width: 200px;
+        /* border: 1px solid blue; */
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        }
+
+    .gnb .menu01_up > li:nth-child(3){
+        margin:0;
+        margin-bottom: 10px;
+        }
+
+    .gnb .down01_none li{
+        display: block;
+        /* border: 1px solid skyblue; */
+        /* margin-bottom: 5px; */
+        background: rgb(238, 236, 233);
+        }
+    
+    .gnb .down01_none li:hover{
+        background: orange;
+        color: white;
+        }
+        
+
+    .gnb .down02_none li{
+        display: block;
+        /* border: 1px solid skyblue; */
+        /* margin-bottom: 5px; */
+        background: rgb(238, 236, 233);
+        }
+
+    .gnb .down02_none li:hover{
+        background: orange;
+        color: white;
+        }
+
+    .gnb .down03_none li{
+        display: block;
+        /* border: 1px solid skyblue; */
+        /* margin-bottom: 5px; */
+        background: rgb(238, 236, 233);
+        }
+    
+    .gnb .down03_none li:hover{
+        background: orange;
+        color: white;
+        }
+
+    .gnb .down04_none li{
+        display: block;
+        /* border: 1px solid skyblue; */
+        /* margin-bottom: 5px; */
+        background: rgb(238, 236, 233);
+        }
+        
+    .gnb .down04_none li:hover{
+        background: orange;
+        color: white;
+        }
+            
+    
+    .gnb #menu01{
+        height: 400px;
+        /* border: 1px solid violet; */
+        margin-top: 30px;
+        display: none;
     }
+
+
+    .gnb #menu01 .menu_model .down01{
+        position: absolute;
+        top:50px;
+        left:0;
+        display: none;
+    }
+
+    .company li:first-child::before{
+        display: none;
+    }
+
+    .company{
+        display: block;
+        left: 0;
+        top:100px;
+        /* position: static; */
+        position:absolute;
+        /* border: 1px solid red; */
+        margin-left: 60px;
+    }
+
+    .company li{
+        display: block;
+        margin: 0;
+        line-height: 30px;
+    }
+/* 
+    .gnb2 ul{
+        top:400px;
+        transition: all .5s;
+    } */
+
 
     .gnb2 ul{
         top:400px;
         transition: all .5s;
-        width: auto;
+        width: 400px;
+        height: 151px;
     }
 
     .gnb2 ul::after{
-        width: auto;
+        display: none;
+        /* transition: all 2s; */
     }
 
+    .gnb2 ul li{
+        /* width: 100%; */
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 3px;
+        /* float: right; */
+    }
+
+    .gnb2 ul li a{
+        padding: 0;
+    }
+
+    .gnb2 ul .gnb2_1{
+        display: block;
+    }
+
+    .gnb2 ul .gnb2_1 a{
+        display: block;
+        width: 400px;
+        /* width: 500px; */
+    }
+
+
+    .gnb2 ul .gnb2_1 strong::before{
+        width: 40px;
+        height: 30px;
+        margin: 0 auto;
+        background-size: 60%;
+    }
+
+    .gnb2 ul .gnb2_2 strong::before{
+        width: 40px;
+        height: 30px;
+        margin: 0 auto;
+        background-size: 60%;
+    }
+
+    .gnb2 ul .gnb2_3 strong::before{
+        width: 40px;
+        height: 30px;
+        margin: 0 auto;
+        background-size: 60%;
+    }
+
+    .gnb2 ul .gnb2_4 strong::before{
+        width: 40px;
+        height: 30px;
+        margin: 0 auto;
+        background-size: 60%;
+    }
+
+    .gnb2 ul .gnb2_5 strong::before{
+        width: 40px;
+        height: 30px;
+        margin: 0 auto;
+        background-size: 60%;
+    }
+
+    .slider{
+        height: 300px;
+        overflow: hidden;
+    }
+
+    .container .slider .unit_02 img, .unit_01 img{
+        display: block;
+        width: 100vw;
+        height: auto;
+    }
+
+
     .section.visual .slider .unit_01 .cont{
-        top:-300px;
+        top:-200px;
         right: 50%;
         color: white;
         font-size: 20px;
@@ -1137,7 +1421,29 @@ hr{
         font-size: 20px !important;
         line-height: 20px !important;
     }
+
+    .container .slider .unit_02 .inner .cont2{
+        margin-top: 100px;
+        font-size: 30px;
+        padding:0px;
+        width: 200px;
+        height: 100px;
+    }
+
+
+    .slider{
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .bx-controls{
+        display:none;}
     
+
+    .model{
+        margin-top: 60px;
+        margin-bottom: 160px;
+        }
     
     .model .item{
         /* display:block; */
@@ -1149,13 +1455,73 @@ hr{
 
 
 @media all and (max-width:720px){
+
+    html{overflow-x: hidden;}
+
     .gnb2 ul{
         top:300px;
         transition: all .5s;
     }
-    
+
+    .model{
+        margin-top: 250px;}
+
+
     .model .item{
         display:block;
         margin: 0 auto;
     }
+
+    .unit_02{
+        height: 200px;
+    }
+
+    .container{
+        height: 300px;
+        overflow: hidden;
+    }
+}
+
+@media all and (max-width:538px){
+    .container{
+        height: 250px;
+        overflow: hidden;
+    }
+
+    .gnb2 ul .gnb2_1 a{
+        width: 100%;
+    }
+
+    .gnb2 ul{
+        top:300px;
+        transition: all .5s;
+        width: 300px;
+        height: 250px;
+    }
+
+    .gnb2 ul li{
+        width:100%
+    }
+
+    .gnb2 ul li a{
+        width:100%
+    }
+
+
+    .gnb2 ul .gnb2_1 {
+        display: block;
+        width: 100%;
+        /* width: 500px; */
+    }
+
+    .model{
+        margin-top: 400px;}
+}
+
+@media all and (max-width:320px){
+    .container{
+        height: 200px;
+        overflow: hidden;
+    }
+
 }

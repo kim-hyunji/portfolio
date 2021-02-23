@@ -16,6 +16,35 @@ $(function(){
 
     // 랭귀지
 
+
+    $(".ham_btn").click(function(){
+        $(".gnb").stop().slideDown();
+        $(".menu01_up").mouseover(function(){
+            $("#menu01").stop().hide();
+        });
+    });
+
+    $(".close").click(function(){
+        $(".gnb").slideUp()
+    });
+
+    $(window).resize(function(){
+        var width = window.outerWidth;
+        if (width > 1120 ){
+            $(".gnb").show();
+            $(".menu01_up").mouseover(function(){
+                $("#menu01").stop().show();
+            });   
+        } else if (width < 1120 ){
+            $(".gnb").css('display','none'); 
+            $("#menu01").stop().hide();  
+        }
+        }); 
+
+        
+    // gnb메뉴 버튼들
+   
+
     $(".menu01_up").mouseover(function(){
         $("#menu01").stop().show();
     });
@@ -29,6 +58,10 @@ $(function(){
         $("#menu01").stop().hide();
     });
 
+
+
+
+
      // 메뉴
 
 
@@ -38,6 +71,7 @@ $(function(){
             pager:false,
         });
     });
+
 
     //슬라이더
 
